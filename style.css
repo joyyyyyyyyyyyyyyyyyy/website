@@ -1,0 +1,74 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.section {
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: paleturquoise;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navBrandID{
+    color: #212122;
+}
+#navLinkID{
+    color: #212122;
+}
+
+#DataTables_Table_0 > tbody > tr > td {
+    background-color: rgb(38, 31, 44);
+}
+
+#DataTables_Table_0_filter > label {
+    color: paleturquoise;
+}
+
+#DataTables_Table_0_info {
+    color: rgb(175, 238, 238);
+}
+
+#fp-nav ul li a span{
+    background-color: blue;
+}
+
+#fp-nav > ul > li:nth-child(1) > a > span:nth-child(2) {
+    background-color: whitesmoke;
+}
+
+#fp-nav > ul > li:nth-child(2) > a > span:nth-child(2) {
+    background-color: whitesmoke;
+}
+
+#fp-nav > ul > li:nth-child(3) > a > span:nth-child(2) {
+    background-color: whitesmoke;
+}
+
+.bi-person-fill-check {
+    color: rgb(98, 255, 0);
+}
+
+.bi-person-fill-x {
+    color: rgb(255, 0, 0);
+}
+
+.bi {
+    font-size: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
