@@ -145,7 +145,7 @@ var section3Text = anime({
 });
 
 var section3Table = anime({
-    targets: '.books',
+    targets: '#book',
     translateX: {
         value: [1000, 0],
     },
@@ -166,7 +166,7 @@ var section3TextUndo = anime({
 });
 
 var section3TableUndo = anime({
-    targets: '.books',
+    targets: '#book',
     translateX: {
         value: [1000],
     },
@@ -178,7 +178,7 @@ var section3TableUndo = anime({
 $(document).ready(function () {
     $('#fullpage').fullpage({ //initialize
         //set options
-        sectionsColor: ['#212122', '#212122', '#212122', '#212122'],
+        sectionsColor: ['#212122', '#212122', '#212122'],
         navigation: true,
         navigationPosition: 'right',
 
@@ -263,7 +263,7 @@ $(document).ready(function () {
                     }
                 }
             },
-            scales: { x: { title: { display: false, text: 'Day' }, ticks: { color: 'white' } }, y: { title: { display: false, text: 'Cases' }, ticks: { color: 'white' } } }
+            scales: { x: { title: { display: false, text: 'Genre' }, ticks: { color: 'white' } }, y: { title: { display: false, text: 'Quantity' }, ticks: { color: 'white' } } }
         }
     };
 
@@ -274,12 +274,17 @@ $(document).ready(function () {
     );
 });
 
+// $(document).ready(function () {
+//     $('books').DataTable();
+//     $('.books').DataTable({
+//         pageLength: 5,
+//         "lengthChange": false
+//     });
+
+// });
+
 $(document).ready(function () {
-    $('books').DataTable();
-    $('.books').DataTable({
-        pageLength: 5,
-        "lengthChange": false
-    });
+    $('#book').DataTable();
 
 });
 

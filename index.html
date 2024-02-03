@@ -66,7 +66,7 @@
           </form>
         </div> <br>
         <h1 style="font-weight: bold; color: whitesmoke;" id="header">Welcome to readPUBLIC</h1>
-        <h3 style="margin-bottom: 50px; color: whitesmoke;" id="header">where curiosity cracks the code</h3>
+        <h5 style="margin-bottom: 50px; color: whitesmoke;" id="header">- where books open doors to infinite world- </h5>
         <div class="row gx-5">
           <h1 style="font-weight: bold; margin-bottom: 50px; color: whitesmoke;">Top Reads of the Month</h1>
           
@@ -81,16 +81,16 @@
       <div class="container overflow-hidden">
         <div class="row gx-5">
           <h1 style="font-weight: bold; margin-bottom: 50px;">Books Statistics</h1>
-
+    
           <div class="col">
             <div class="p-3  ">
               <div class="row" style="font-size: 22px; font-weight: bold;">
-                  <div class="col-3"><b id="totalBooks" style="font-size: 50px; color: paleturquoise"></b>
-                    <script src="script.js"></script><br>Total Books
-                  </div>
-                  <div class="col-3"><b id="categories" style="font-size: 50px; color: paleturquoise"></b>
-                    <script src="script.js"></script><br>Categories
-                  </div>
+                <div class="col-3"><b id="totalBooks" style="font-size: 50px; color: paleturquoise"></b>
+                  <script src="script.js"></script><br>Total Books
+                </div>
+                <div class="col-3"><b id="categories" style="font-size: 50px; color: paleturquoise"></b>
+                  <script src="script.js"></script><br>Categories
+                </div>
                 <div class="col-3"><b id="available" style="font-size: 50px; color: paleturquoise"></b>
                   <script src="script.js"></script><br>Available
                 </div>
@@ -98,23 +98,26 @@
                   <script src="script.js"></script><br>Reserved
                 </div>
               </div>
-              <p style="margin-top: 50px; font-size: large; text-align: left;" id="section1Text">The number of Covid-19
-                cases in
-                Singapore has grown to 257510, with 2079 new cases reported on 31 Dec.<br><br>
-                Of these, 2030 were reported in the community and 40 in the workers’ dormitories. The remaining nine
-                cases were imported.<br><br>
-                A further 2275 patients were discharged, including 366 seniors aged above 60. A total of 238909
-                cases have recovered to date.
+              <p style="margin-top: 50px; font-size: 16px; text-align: left;" id="section1Text">
+                Dive into the literary world with our expansive collection of 169 books spanning across 11 captivating
+                categories. Immerse yourself in a range of genres, from gripping mysteries to insightful self-help books.
+                Currently, 103 books are readily available for exploration, while 66 are reserved by eager readers. Our
+                library provides a rich tapestry of literary experiences, promising a journey through diverse topics and
+                themes.
+                <br><br>
+                Discover the magic within our curated selection of 169 books spanning acrosss 11 categories.
+                Whether you're a seasoned reader or a newcomer, there's a story waiting for you. Join us for an enriching
+                reading adventure and unlock the door to a world of knowledge and imagination!
               </p>
-
+    
             </div>
           </div>
           <div class="col">
-            <div class="p-3  ">
+            <div class="p-3 d-flex justify-content-center">
               <canvas id="booksDistribution" style="justify-content: center;"></canvas>
             </div>
           </div>
-          
+    
         </div>
       </div>
     </div>
@@ -126,7 +129,7 @@
         <div class="row gx-5">
           <h1 style="font-weight: bold; margin-bottom: 50px;">Inventory</h1>
 
-          <div class="col">
+          <!-- <div class="col">
             <div class="p-3  ">
               <table class="books compact" width="50%">
                 <thead>
@@ -156,21 +159,60 @@
                     <td>Pfizer</td>
                     <td>6343 1123</td>
                   </tr>
-                  <tr>
-                    <td>Choa Chu Kang Polyclinic</td>
-                    <td>2 Teck Whye Crescent, Singapore 688846</td>
-                    <td>Moderna</td>
-                    <td>6343 1124</td>
-                  </tr>
-                  <tr>
-                    <td>Clementi Polyclinic</td>
-                    <td>451 Clementi Avenue 3, Singapore 120451</td>
-                    <td>Pfizer</td>
-                    <td>6343 1125</td>
-                  </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
+
+            <table id="book" class="display">
+              <thead>
+                  <tr>
+                      <th>Title</th>
+                      <th>Author</th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Type</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>School of InfoComm</td>
+                      <td>Diploma in Financial Technology</td>
+                      <td>DFT</td>
+                      <td>R18</td>
+                      <td>R18</td>
+                  </tr>
+                  <tr>
+                      <td>School of InfoComm</td>
+                      <td>Diploma in Business Information Systems</td>
+                      <td>DBIS</td>
+                      <td>R13</td>
+                      <td>R18</td>
+                  </tr>
+                  <tr>
+                      <td>School of InfoComm</td>
+                      <td>Diploma in Information Technology</td>
+                      <td>DIT</td>
+                      <td>R12</td>
+                      <td>R18</td>
+                  </tr>
+                  <tr>
+                      <td>School of InfoComm</td>
+                      <td>Diploma in Digital Design &amp; Development</td>
+                      <td>DDDD</td>
+                      <td>R47</td>
+                      <td>R18</td>
+                  </tr>
+                  <tr>
+                      <td>School of InfoComm</td>
+                      <td>Diploma in Infocomm Security Management</td>
+                      <td>DISM</td>
+                      <td>R55</td>
+                      <td>R18</td>
+                  </tr>
+
+              </tbody>
+          </table><br>
+
           </div>
         </div>
       </div>
