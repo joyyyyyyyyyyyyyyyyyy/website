@@ -109,3 +109,38 @@ nav {
       width: 100%;
     }
   }
+
+
+
+  .inventory-table {
+        color: white;
+    }
+
+    #inventoryTable th,
+    #inventoryTable td {
+        color: white;
+        border: 1px solid white;
+    }
+
+    #inventoryTable thead {
+        background-color: black;
+    }
+
+    #inventoryTable tbody {
+        background-color: black;
+    }
+
+    #inventoryTable tbody tr:nth-child(even) {
+        background-color: #333;
+    }
+
+    #inventoryTable_filter input,
+    #inventoryTable_length select {
+        color: white;
+        background-color: #333;
+    }
+
+    #inventoryTable_info,
+    #inventoryTable_paginate {
+        color: white;
+    }
