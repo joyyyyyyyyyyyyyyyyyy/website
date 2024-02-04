@@ -275,12 +275,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('centres').DataTable();
-    $('.centres').DataTable({
-        pageLength: 5,
-        "lengthChange": false
+    // Initialize DataTable for the inventory table
+    $('#inventoryTable').DataTable({
+        searching: true,
+        paging: true,
+        lengthChange: false,
+        // Add more options as needed
     });
-
 });
 
 // $(document).ready(function () {
