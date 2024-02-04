@@ -134,10 +134,13 @@ nav {
         background-color: #333;
     }
 
+    #inventoryTable tbody tr:nth-child(odd) {
+        background-color: #333;
+    }
+
     #inventoryTable_filter input,
     #inventoryTable_length select {
         color: white;
-        background-color: #333;
     }
 
     #inventoryTable_info,
