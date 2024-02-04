@@ -145,7 +145,7 @@ var section3Text = anime({
 });
 
 var section3Table = anime({
-    targets: '.centres',
+    targets: '#inventoryTable',
     translateX: {
         value: [1000, 0],
     },
@@ -166,7 +166,7 @@ var section3TextUndo = anime({
 });
 
 var section3TableUndo = anime({
-    targets: '.centres',
+    targets: '#inventoryTable',
     translateX: {
         value: [1000],
     },
@@ -279,8 +279,8 @@ $(document).ready(function () {
     $('#inventoryTable').DataTable({
         searching: true,
         paging: true,
+        pageLength: 5,
         lengthChange: false,
-        // Add more options as needed
     });
 });
 
@@ -305,5 +305,3 @@ $(document).ready(function () {
 //         allowHTML: true, //allow HTML in tippy content
 //     });
 // });
-
-
