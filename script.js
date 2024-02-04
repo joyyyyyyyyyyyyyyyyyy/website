@@ -1,3 +1,8 @@
+//SECTION 1 ANIMATIONS
+
+//SECTION 2 ANIMATIONS
+
+//SECTION 3 ANIMATIONS
 var totalBooks = anime({
     targets: '#totalBooks',
     innerHTML: [0, 169], //start and end values
