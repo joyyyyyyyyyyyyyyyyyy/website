@@ -145,7 +145,7 @@ var section3Text = anime({
 });
 
 var section3Table = anime({
-    targets: '#book',
+    targets: '.centres',
     translateX: {
         value: [1000, 0],
     },
@@ -166,7 +166,7 @@ var section3TextUndo = anime({
 });
 
 var section3TableUndo = anime({
-    targets: '#book',
+    targets: '.centres',
     translateX: {
         value: [1000],
     },
@@ -274,19 +274,19 @@ $(document).ready(function () {
     );
 });
 
-// $(document).ready(function () {
-//     $('books').DataTable();
-//     $('.books').DataTable({
-//         pageLength: 5,
-//         "lengthChange": false
-//     });
-
-// });
-
 $(document).ready(function () {
-    $('#book').DataTable();
+    $('centres').DataTable();
+    $('.centres').DataTable({
+        pageLength: 5,
+        "lengthChange": false
+    });
 
 });
+
+// $(document).ready(function () {
+//     $('#book').DataTable();
+
+// });
 
 // $(document).ready(function () {
 //     tippy('#Bukit_Merah', {
@@ -304,3 +304,5 @@ $(document).ready(function () {
 //         allowHTML: true, //allow HTML in tippy content
 //     });
 // });
+
+

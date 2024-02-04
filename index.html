@@ -62,7 +62,7 @@
           <form class="d-flex custom-search-form">
             <input class="form-control me-2 custom-search-input" type="search" placeholder="search for books"
               id="search" aria-label="search">
-            <button class="btn btn-outline-success custom-search-btn" type="submit" id="btn-search">SEARCH</button>
+            <button class="btn btn-outline-success custom-search-btn" type="submit" id="btn-search"><i class="fa-solid fa-magnifying-glass" style="margin-right: 7px;"></i>SEARCH</button>
           </form>
         </div> <br>
         <h1 style="font-weight: bold; color: whitesmoke;" id="header">Welcome to readPUBLIC</h1>
@@ -70,7 +70,19 @@
         <div class="row gx-5">
           <h1 style="font-weight: bold; margin-bottom: 50px; color: whitesmoke;">Top Reads of the Month</h1>
           
-          
+          <div class="container mt-3">
+            <div class="card" style="width:300px; height: auto;">
+              <img class="card-img-top" src="images/gct_tallorderpt1.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+            <br>
+            
+          </div>
+
         </div>
       </div>
     </div>
@@ -113,7 +125,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="p-3 d-flex justify-content-center">
+            <div class="p-3">
               <canvas id="booksDistribution" style="justify-content: center;"></canvas>
             </div>
           </div>
@@ -129,14 +141,15 @@
         <div class="row gx-5">
           <h1 style="font-weight: bold; margin-bottom: 50px;">Inventory</h1>
 
-          <!-- <div class="col">
+          <div class="col">
             <div class="p-3  ">
-              <table class="books compact" width="50%">
+              <table class="centres compact">
                 <thead>
                   <tr>
                     <td>Name</td>
                     <td>Address</td>
                     <td>Vaccine Type</td>
+                    <td>Phone</td>
                     <td>Phone</td>
                   </tr>
                 </thead>
@@ -146,73 +159,89 @@
                     <td>11 Bedok North Street 1 Heartbeat@Bedok #02-01, #03-01, Singapore 469662</td>
                     <td>Pfizer</td>
                     <td>6343 1121</td>
+                    <td>6343 1121</td>
                   </tr>
                   <tr>
                     <td>Bukit Batok Polyclinic</td>
                     <td>50 Bukit Batok West Avenue 3, Singapore 659164</td>
                     <td>Moderna</td>
                     <td>6343 1122</td>
+                    <td>6343 1121</td>
                   </tr>
                   <tr>
                     <td>Bukit Merah Polyclinic</td>
                     <td>162 Bukit Merah Central Level 4, Singapore 150163</td>
                     <td>Pfizer</td>
                     <td>6343 1123</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Choa Chu Kang Polyclinic</td>
+                    <td>2 Teck Whye Crescent, Singapore 688846</td>
+                    <td>Moderna</td>
+                    <td>6343 1124</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Clementi Polyclinic</td>
+                    <td>451 Clementi Avenue 3, Singapore 120451</td>
+                    <td>Pfizer</td>
+                    <td>6343 1125</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Geylang Polyclinic</td>
+                    <td>21 Geylang East Central, Singapore 389707</td>
+                    <td>Pfizer</td>
+                    <td>6343 1126</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Hougang Polyclinic</td>
+                    <td>89 Hougang Avenue 4, Singapore 538829</td>
+                    <td>Pfizer</td>
+                    <td>6765 1121</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Jurong Polyclinic</td>
+                    <td>190 Jurong East Avenue 1, Singapore 609788</td>
+                    <td>Pfizer</td>
+                    <td>6765 1122</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Marine Parade Polyclinic</td>
+                    <td>80 Marine Parade Central, Singapore 440080</td>
+                    <td>Pfizer</td>
+                    <td>6765 1123</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Outram Polyclinic</td>
+                    <td>3 Second Hospital Avenue, #02-00 Health Promotion Board Building, Singapore 168937</td>
+                    <td>Comirnaty</td>
+                    <td>6765 1124</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Pasir Ris Polyclinic</td>
+                    <td>1 Pasir Ris Drive 4, Singapore 519457</td>
+                    <td>Comirnaty</td>
+                    <td>6765 1125</td>
+                    <td>6343 1121</td>
+                  </tr>
+                  <tr>
+                    <td>Pioneer Polyclinic</td>
+                    <td>26 Jurong West Street 61, Singapore 648201</td>
+                    <td>Moderna</td>
+                    <td>6765 1126</td>
+                    <td>6343 1121</td>
                   </tr>
                 </tbody>
               </table>
-            </div> -->
-
-            <table id="book" class="display">
-              <thead>
-                  <tr>
-                      <th>Title</th>
-                      <th>Author</th>
-                      <th>Genre</th>
-                      <th>Year</th>
-                      <th>Type</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>School of InfoComm</td>
-                      <td>Diploma in Financial Technology</td>
-                      <td>DFT</td>
-                      <td>R18</td>
-                      <td>R18</td>
-                  </tr>
-                  <tr>
-                      <td>School of InfoComm</td>
-                      <td>Diploma in Business Information Systems</td>
-                      <td>DBIS</td>
-                      <td>R13</td>
-                      <td>R18</td>
-                  </tr>
-                  <tr>
-                      <td>School of InfoComm</td>
-                      <td>Diploma in Information Technology</td>
-                      <td>DIT</td>
-                      <td>R12</td>
-                      <td>R18</td>
-                  </tr>
-                  <tr>
-                      <td>School of InfoComm</td>
-                      <td>Diploma in Digital Design &amp; Development</td>
-                      <td>DDDD</td>
-                      <td>R47</td>
-                      <td>R18</td>
-                  </tr>
-                  <tr>
-                      <td>School of InfoComm</td>
-                      <td>Diploma in Infocomm Security Management</td>
-                      <td>DISM</td>
-                      <td>R55</td>
-                      <td>R18</td>
-                  </tr>
-
-              </tbody>
-          </table><br>
-
+            </div>
+          </div>
           </div>
         </div>
       </div>

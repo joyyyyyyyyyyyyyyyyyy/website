@@ -57,8 +57,55 @@ nav {
     background-color: whitesmoke;
 }
 
-#book {
-    background-color: whitesmoke;
-    color: black;
+.centres {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
   }
 
+
+  .custom-search-form {
+    width: 100%;
+  }
+
+  .custom-search-input {
+    width: 80%;
+  }
+
+  .custom-search-btn {
+    width: 20%;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .book-info {
+    margin-top: 10px;
+  }
+
+  .reserve-btn {
+    background-color: #00ff3c;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Media Query for smaller screens */
+  @media (max-width: 767px) {
+    .custom-search-input,
+    .custom-search-btn {
+      width: 100%;
+    }
+  }
