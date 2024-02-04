@@ -115,3 +115,10 @@ nav {
     #inventoryTable_paginate {
         color: white;
     }
+
+
+
+    .card-img-top {
+        height: 400px; /* Set the desired height */
+        object-fit: cover;
+      }

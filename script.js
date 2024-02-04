@@ -39,8 +39,8 @@ var header = anime({
     },
 });
 
-var section1Text = anime({
-    targets: '#section1Text',
+var section2Text = anime({
+    targets: '#section2Text',
     translateX: {
         value: [-1000, 0],
     },
@@ -89,8 +89,8 @@ var header = anime({
     },
 });
 
-var section1TextUndo = anime({
-    targets: '#section1Text',
+var section2TextUndo = anime({
+    targets: '#section2Text',
     translateX: {
         value: [-1000, 0],
     },
@@ -98,15 +98,15 @@ var section1TextUndo = anime({
     easing: 'easeInOutQuart',
 });
 
-var section2Text = anime({
-    targets: '#section2Text',
-    translateX: {
-        value: [1000, 0],
-    },
+// var section2Text = anime({
+//     targets: '#section2Text',
+//     translateX: {
+//         value: [1000, 0],
+//     },
 
-    duration: 1000,
-    easing: 'easeInOutQuart',
-});
+//     duration: 1000,
+//     easing: 'easeInOutQuart',
+// });
 
 var vacCount = anime({
     targets: '#vacCount',
@@ -116,15 +116,15 @@ var vacCount = anime({
     duration: 1000
 });
 
-var section2TextUndo = anime({
-    targets: '#section2Text',
-    translateX: {
-        value: [1000],
-    },
+// var section2TextUndo = anime({
+//     targets: '#section2Text',
+//     translateX: {
+//         value: [1000],
+//     },
 
-    duration: 10,
-    easing: 'easeInOutQuart',
-});
+//     duration: 10,
+//     easing: 'easeInOutQuart',
+// });
 
 var vacCountUndo = anime({
     targets: '#vacCount',
@@ -190,7 +190,7 @@ $(document).ready(function () {
                 categories.play();
                 available.play();
                 reserved.play();
-                section1Text.play();
+                // section1Text.play();
             } else if (destination.index == 1) {
                 section2Text.play();
                 vacCount.play(); // anime.js play method
@@ -206,7 +206,7 @@ $(document).ready(function () {
                 categoriesUndo.play();
                 availableUndo.play();
                 reservedUndo.play();
-                section1TextUndo.play();
+                // section1TextUndo.play();
             } else if (destination.index == 1) {
                 section2TextUndo.play();
                 vacCountUndo.play(); // anime.js play method
@@ -283,25 +283,3 @@ $(document).ready(function () {
         lengthChange: false,
     });
 });
-
-// $(document).ready(function () {
-//     $('#book').DataTable();
-
-// });
-
-// $(document).ready(function () {
-//     tippy('#Bukit_Merah', {
-//         content: '<b>Bukit Merah Polyclinic</b><br>Vaccination: Pfizer<br>6343 1123',
-//         allowHTML: true, //allow HTML in tippy content
-//     });
-
-//     tippy('#Choa_Chu_Kang', {
-//         content: '<b>Choa Chu Kang Polyclinic</b><br>Vaccination: Moderna<br>6343 1124',
-//         allowHTML: true, //allow HTML in tippy content
-//     });
-
-//     tippy('#Clementi', {
-//         content: '<b>Clementi Polyclinic</b><br>Vaccination: Pfizer<br>6343 1125',
-//         allowHTML: true, //allow HTML in tippy content
-//     });
-// });
