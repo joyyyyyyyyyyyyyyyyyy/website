@@ -103,15 +103,15 @@ var section2TextUndo = anime({
     easing: 'easeInOutQuart',
 });
 
-// var section2Text = anime({
-//     targets: '#section2Text',
-//     translateX: {
-//         value: [1000, 0],
-//     },
+var booksDistribution = anime({
+    targets: '#booksDistribution',
+    translateX: {
+        value: [1000, 0],
+    },
 
-//     duration: 1000,
-//     easing: 'easeInOutQuart',
-// });
+    duration: 1000,
+    easing: 'easeInOutQuart',
+});
 
 var vacCount = anime({
     targets: '#vacCount',
@@ -121,15 +121,15 @@ var vacCount = anime({
     duration: 1000
 });
 
-// var section2TextUndo = anime({
-//     targets: '#section2Text',
-//     translateX: {
-//         value: [1000],
-//     },
+var booksDistributionUndo = anime({
+    targets: '#booksDistribution',
+    translateX: {
+        value: [1000],
+    },
 
-//     duration: 10,
-//     easing: 'easeInOutQuart',
-// });
+    duration: 10,
+    easing: 'easeInOutQuart',
+});
 
 var vacCountUndo = anime({
     targets: '#vacCount',
@@ -191,14 +191,18 @@ $(document).ready(function () {
 
         afterLoad: function (origin, destination, direction) {
             if (destination.index == 0) {
+                // totalBooks.play();
+                // categories.play();
+                // available.play();
+                // reserved.play();
+                // section1Text.play();
+            } else if (destination.index == 1) {
                 totalBooks.play();
                 categories.play();
                 available.play();
                 reserved.play();
-                // section1Text.play();
-            } else if (destination.index == 1) {
                 section2Text.play();
-                vacCount.play(); // anime.js play method
+                booksDistribution.play(); // anime.js play method
                 } else {
                 section3Text.play();
                 section3Table.play(); // anime.js play method
@@ -207,14 +211,18 @@ $(document).ready(function () {
 
         onLeave: function (origin, destination, direction) {
             if (destination.index == 0) {
+                // totalBooksUndo.play();
+                // categoriesUndo.play();
+                // availableUndo.play();
+                // reservedUndo.play();
+                // section1TextUndo.play();
+            } else if (destination.index == 1) {
                 totalBooksUndo.play();
                 categoriesUndo.play();
                 availableUndo.play();
                 reservedUndo.play();
-                // section1TextUndo.play();
-            } else if (destination.index == 1) {
                 section2TextUndo.play();
-                vacCountUndo.play(); // anime.js play method
+                booksDistributionUndo.play(); // anime.js play method
                 } else {
                 section3TextUndo.play();
                 section3TableUndo.play(); // anime.js play method
