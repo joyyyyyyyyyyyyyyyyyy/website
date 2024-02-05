@@ -22,18 +22,19 @@ nav {
     padding-right: 10px;
 }
 
-#navBrandID{
-    color: #212122;
-}
-#navLinkID{
+#navBrandID {
     color: #212122;
 }
 
-#DataTables_Table_0 > tbody > tr > td {
+#navLinkID {
+    color: #212122;
+}
+
+#DataTables_Table_0>tbody>tr>td {
     background-color: rgb(38, 31, 44);
 }
 
-#DataTables_Table_0_filter > label {
+#DataTables_Table_0_filter>label {
     color: paleturquoise;
 }
 
@@ -41,84 +42,101 @@ nav {
     color: rgb(175, 238, 238);
 }
 
-#fp-nav ul li a span{
+#fp-nav ul li a span {
     background-color: blue;
 }
 
-#fp-nav > ul > li:nth-child(1) > a > span:nth-child(2) {
+#fp-nav>ul>li:nth-child(1)>a>span:nth-child(2) {
     background-color: whitesmoke;
 }
 
-#fp-nav > ul > li:nth-child(2) > a > span:nth-child(2) {
+#fp-nav>ul>li:nth-child(2)>a>span:nth-child(2) {
     background-color: whitesmoke;
 }
 
-#fp-nav > ul > li:nth-child(3) > a > span:nth-child(2) {
+#fp-nav>ul>li:nth-child(3)>a>span:nth-child(2) {
     background-color: whitesmoke;
 }
 
 
-  .custom-search-form {
+.custom-search-form {
     width: 100%;
-  }
+}
 
-  .custom-search-input {
+.custom-search-input {
     width: 80%;
-  }
+}
 
-  .custom-search-btn {
+.custom-search-btn {
     width: 20%;
-  }
+}
 
-  /* Media Query for smaller screens */
-  @media (max-width: 767px) {
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+
     .custom-search-input,
     .custom-search-btn {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 
 
-  .inventory-table {
-        color: white;
-    }
+.inventory-table {
+    color: white;
+}
 
-    #inventoryTable th,
-    #inventoryTable td {
-        color: white;
-        border: 1px solid white;
-    }
+#inventoryTable th,
+#inventoryTable td {
+    color: white;
+    border: 1px solid white;
+}
 
-    #inventoryTable thead {
-        background-color: black;
-    }
+#inventoryTable thead {
+    background-color: black;
+}
 
-    #inventoryTable tbody {
-        background-color: black;
-    }
+#inventoryTable tbody {
+    background-color: black;
+}
 
-    #inventoryTable tbody tr:nth-child(even) {
-        background-color: #333;
-    }
+#inventoryTable tbody tr:nth-child(even) {
+    background-color: #333;
+}
 
-    #inventoryTable tbody tr:nth-child(odd) {
-        background-color: #333;
-    }
+#inventoryTable tbody tr:nth-child(odd) {
+    background-color: #333;
+}
 
-    #inventoryTable_filter input,
-    #inventoryTable_length select {
-        color: white;
-    }
+#inventoryTable_filter input,
+#inventoryTable_length select {
+    color: white;
+}
 
-    #inventoryTable_info,
-    #inventoryTable_paginate {
-        color: white;
-    }
+#inventoryTable_info,
+#inventoryTable_paginate {
+    color: white;
+}
 
 
 
-    .card-img-top {
-        height: 400px; /* Set the desired height */
-        object-fit: cover;
-      }
+.card-img-top {
+    height: 400px;
+    /* Set the desired height */
+    object-fit: cover;
+}
+
+
+
+/* clears the 'x' in the search input */
+/* 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.border-grey {
+    border-color: lightgrey;
+} */
